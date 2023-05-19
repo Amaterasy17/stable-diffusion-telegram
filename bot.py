@@ -48,7 +48,7 @@ def image_to_bytes(image):
     return bio
 
 def get_try_again_markup():
-    keyboard = [[InlineKeyboardButton("Try again", callback_data="TRYAGAIN"), InlineKeyboardButton("Variations", callback_data="VARIATIONS")]]
+    keyboard = [[InlineKeyboardButton("Сгенерировать еще одну", callback_data="TRYAGAIN")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     return reply_markup
 
